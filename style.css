@@ -20,6 +20,13 @@ button{
     border: none;
     outline: none;
     box-shadow: none;
+
+    /* default button styles */
+    background-color: #3882F6;
+    border-width: 2px;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-weight: 400;
 }
 
 /* TEXT formatting */
@@ -37,6 +44,7 @@ h2{
 h3{
     color: #F9FAF8;
     font-size: 24px;
+    font-weight: 600;
 }
 p,
 ul,
@@ -45,7 +53,6 @@ ul,
     font-size: 18px;
     color: #E5E7EB;
 }
-
 
 
 /* PAGE formatting */
@@ -100,8 +107,6 @@ section.three {
 }
 
 
-
-
 /* HEADER formatting */
 
 .nav-bar{
@@ -115,31 +120,52 @@ ul.nav-list {
 }
 
 
-/* SECTION THREE formatting */
-section.three{
+/* SECTION ONE formatting */
+.first-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
+.left,
+.right {
+    height: 250px;
+}
+
+.left {
+    flex: 1;
+}
+
+.left button{
+    margin-top: 10px;
+}
+
+.right{
+    background-color: #6d747d;
+    align-self: stretch;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* SECTION THREE formatting */
 p.quote{
     font-size: 36px;
     font-style: italic;
     font-weight: 200;
     color: #1F2937;
-
-    width: 800px;
-
-    display: flex;
-    flex-direction: column;
 }
 
 .quote-author{
     font-size: 24px;
     font-weight: 600;
     color: #1F2937;
-
-    align-self: flex-end;
+    text-align: right;
 }
 
 
@@ -149,7 +175,17 @@ p.quote{
     background-color: #3882F6;
     height: 150px;
     border-radius: 10px;
+    padding: 20px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.call-to-action button {
+    border: 1px solid #E5E7EB;
+}
+
 
 
 
